@@ -1,2 +1,2 @@
-#Pokedex
-Search for your favorite Pokemon
+# Pokedex
+Search for your favorite Pokemon. Created in React.
