@@ -1,137 +1,61 @@
 import React from 'react';
 import './homepage.styles.scss';
 
-const HomePage = () => (
-  <div className="homepage">
-    <div className="banner">
-      <div className="banner-content">
-        <div className="banner-eevee"></div>
-        <div className="banner-logo"></div>
-        <div className="banner-pikachu"></div>
-      </div>
-    </div>
+import CardList from '../../components/card-list/card-list.component'
 
-    <div className="search">
-      <div className="search-box">
-        <input
-          className="search-field"
-          type="search"
-          placeholder="Search for Pokemon..."
-        />
-      </div>
-    </div>
+class HomePage extends React.Component {
+  constructor() {
+    super();
 
-    <div className="card-list">
-      <div className="card">
-        <div className="card-image">
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" />
-        </div>
-        <div className="card-text">
-          Bulbasaur
-        </div>
-      </div>
+    this.state = {
+      pokemon: [],
+      searchField: ''
+    }
+  }
 
-      <div className="card">
-        <div className="card-image">
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" />
-        </div>
-        <div className="card-text">
-          Bulbasaur
-        </div>
-      </div>
+  componentDidMount() {
+    fetch('https://pokeapi.co/api/v2/pokemon?offset=0&limit=807')
+      .then(response => response.json())
+      .then(users => this.setState({
+        pokemon: users.results
+          .map((poke, index) => ({ id: index + 1, ...poke }))
+      }))
+  }
 
-      <div className="card">
-        <div className="card-image">
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" />
-        </div>
-        <div className="card-text">
-          Bulbasaur
-        </div>
-      </div>
+  handleChange = (e) => {
+    this.setState({ searchField: e.target.value })
+  }
 
-      <div className="card">
-        <div className="card-image">
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" />
-        </div>
-        <div className="card-text">
-          Bulbasaur
-        </div>
-      </div>
+  render() {
+    const { pokemon, searchField } = this.state;
+    const filteredPokemon = pokemon.filter((monster) => (
+      monster.name.toLowerCase().includes(searchField.toLowerCase())
+    ));
 
-      <div className="card">
-        <div className="card-image">
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" />
+    return (
+      <div className="homepage">
+        <div className="banner">
+          <div className="banner-content">
+            <div className="banner-eevee"></div>
+            <div className="banner-logo"></div>
+            <div className="banner-pikachu"></div>
+          </div>
         </div>
-        <div className="card-text">
-          Bulbasaur
-        </div>
-      </div>
 
-      <div className="card">
-        <div className="card-image">
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" />
+        <div className="search">
+          <div className="search-box">
+            <input
+              className="search-field"
+              type="search"
+              placeholder="Search for Pokemon..."
+              onChange={this.handleChange}
+            />
+          </div>
         </div>
-        <div className="card-text">
-          Bulbasaur
-        </div>
+        <CardList pokemon={filteredPokemon} />
       </div>
-
-      <div className="card">
-        <div className="card-image">
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" />
-        </div>
-        <div className="card-text">
-          Bulbasaur
-        </div>
-      </div>
-
-      <div className="card">
-        <div className="card-image">
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" />
-        </div>
-        <div className="card-text">
-          Bulbasaur
-        </div>
-      </div>
-
-      <div className="card">
-        <div className="card-image">
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" />
-        </div>
-        <div className="card-text">
-          Bulbasaur
-        </div>
-      </div>
-
-      <div className="card">
-        <div className="card-image">
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" />
-        </div>
-        <div className="card-text">
-          Bulbasaur
-        </div>
-      </div>
-
-      <div className="card">
-        <div className="card-image">
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" />
-        </div>
-        <div className="card-text">
-          Bulbasaur
-        </div>
-      </div>
-
-      <div className="card">
-        <div className="card-image">
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" />
-        </div>
-        <div className="card-text">
-          Bulbasaur
-        </div>
-      </div>
-
-    </div>
-  </div>
-);
+    )
+  }
+};
 
 export default HomePage;
