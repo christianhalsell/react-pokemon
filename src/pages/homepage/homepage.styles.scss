@@ -1,0 +1,77 @@
+.homepage {
+}
+
+.banner {
+  background-color: #fe0000;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .banner-content {
+    max-width: 960px;
+    display: flex;  
+
+    .banner-eevee {
+      width: 141px;
+      height: 160px;
+      background: url('./images/eevee.png') no-repeat 0 0;
+      background-size: cover;
+    }
+
+    .banner-pikachu {
+      width: 161px;
+      height: 170px;
+      background: url('./images/pikachu.png') no-repeat 0 0;
+      background-size: cover;
+    }
+    
+    .banner-logo {
+      width: 408px;
+      height: 150px;
+      margin: 0 40px;
+      background: url('./images/pokemon-logo-png-pokemon-logo-png-2000.png') no-repeat 0 0;
+      background-size: cover;
+    }
+  }
+}
+
+.search {
+  background-color: black;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+
+  .search-box {
+    max-width: 960px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .search-field {
+    -webkit-appearance: none;
+    background-color: white;
+    border: none;
+    font-size: 14px;
+    outline: none;
+    padding: 10px;
+    width: 300px;
+    height: 34px;
+    line-height: 30px;
+  }
+}
+
+.card-list {
+  max-width: 960px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.card {
+  background-color: lime;
+  height: 140px;
+}
