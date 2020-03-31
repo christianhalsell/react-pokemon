@@ -24,111 +24,112 @@ const HomePage = () => (
     <div className="card-list">
       <div className="card">
         <div className="card-image">
-          image
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" />
         </div>
         <div className="card-text">
-          text
+          Bulbasaur
         </div>
       </div>
 
       <div className="card">
         <div className="card-image">
-          image
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" />
         </div>
         <div className="card-text">
-          text
+          Bulbasaur
         </div>
       </div>
 
       <div className="card">
         <div className="card-image">
-          image
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" />
         </div>
         <div className="card-text">
-          text
+          Bulbasaur
         </div>
       </div>
 
       <div className="card">
         <div className="card-image">
-          image
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" />
         </div>
         <div className="card-text">
-          text
+          Bulbasaur
         </div>
       </div>
 
       <div className="card">
         <div className="card-image">
-          image
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" />
         </div>
         <div className="card-text">
-          text
+          Bulbasaur
         </div>
       </div>
 
       <div className="card">
         <div className="card-image">
-          image
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" />
         </div>
         <div className="card-text">
-          text
+          Bulbasaur
         </div>
       </div>
 
       <div className="card">
         <div className="card-image">
-          image
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" />
         </div>
         <div className="card-text">
-          text
+          Bulbasaur
         </div>
       </div>
 
       <div className="card">
         <div className="card-image">
-          image
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" />
         </div>
         <div className="card-text">
-          text
+          Bulbasaur
         </div>
       </div>
 
       <div className="card">
         <div className="card-image">
-          image
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" />
         </div>
         <div className="card-text">
-          text
+          Bulbasaur
         </div>
       </div>
 
       <div className="card">
         <div className="card-image">
-          image
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" />
         </div>
         <div className="card-text">
-          text
+          Bulbasaur
         </div>
       </div>
 
       <div className="card">
         <div className="card-image">
-          image
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" />
         </div>
         <div className="card-text">
-          text
+          Bulbasaur
         </div>
       </div>
 
       <div className="card">
         <div className="card-image">
-          image
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="" />
         </div>
         <div className="card-text">
-          text
+          Bulbasaur
         </div>
       </div>
+
     </div>
   </div>
 );

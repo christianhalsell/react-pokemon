@@ -72,6 +72,17 @@
 }
 
 .card {
-  background-color: lime;
-  height: 140px;
+  .card-image {
+    height: 110px;
+    background: #F6F7F2;
+    border: 1px solid #E0E0E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-text {
+    font-size: 16px;
+    color: #14386D;
+  }
 }
