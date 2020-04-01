@@ -1,13 +1,13 @@
 import React from 'react';
 import './search.styles.scss';
 
-const Search = ({ handleChange }) => (
+const Search = ({ handleChange, placeholder }) => (
   <div className="search">
     <div className="search-box">
       <input
         className="search-field"
         type="search"
-        placeholder="Search for Pokemon..."
+        placeholder={placeholder}
         onChange={handleChange}
       />
     </div>
