@@ -2,6 +2,7 @@ import React from 'react';
 import './homepage.styles.scss';
 
 import Banner from '../../components/banner/banner.component';
+import Search from '../../components/search/search.component';
 import CardList from '../../components/card-list/card-list.component';
 
 class HomePage extends React.Component {
@@ -36,17 +37,7 @@ class HomePage extends React.Component {
     return (
       <div className="homepage">
         <Banner />
-
-        <div className="search">
-          <div className="search-box">
-            <input
-              className="search-field"
-              type="search"
-              placeholder="Search for Pokemon..."
-              onChange={this.handleChange}
-            />
-          </div>
-        </div>
+        <Search handleChange={this.handleChange} />
         <CardList pokemon={filteredPokemon} />
       </div>
     )
