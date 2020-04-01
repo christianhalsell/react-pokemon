@@ -1,42 +1,6 @@
 .homepage {
 }
 
-.banner {
-  background-color: #fe0000;
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  .banner-content {
-    max-width: 960px;
-    display: flex;  
-
-    .banner-eevee {
-      width: 141px;
-      height: 160px;
-      background: url('./images/eevee.png') no-repeat 0 0;
-      background-size: cover;
-    }
-
-    .banner-pikachu {
-      width: 161px;
-      height: 170px;
-      background: url('./images/pikachu.png') no-repeat 0 0;
-      background-size: cover;
-    }
-    
-    .banner-logo {
-      width: 408px;
-      height: 150px;
-      margin: 0 40px;
-      background: url('./images/pokemon-logo-png-pokemon-logo-png-2000.png') no-repeat 0 0;
-      background-size: cover;
-    }
-  }
-}
-
 .search {
   background-color: black;
   height: 60px;

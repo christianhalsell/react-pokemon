@@ -1,7 +1,8 @@
 import React from 'react';
 import './homepage.styles.scss';
 
-import CardList from '../../components/card-list/card-list.component'
+import Banner from '../../components/banner/banner.component';
+import CardList from '../../components/card-list/card-list.component';
 
 class HomePage extends React.Component {
   constructor() {
@@ -34,13 +35,7 @@ class HomePage extends React.Component {
 
     return (
       <div className="homepage">
-        <div className="banner">
-          <div className="banner-content">
-            <div className="banner-eevee"></div>
-            <div className="banner-logo"></div>
-            <div className="banner-pikachu"></div>
-          </div>
-        </div>
+        <Banner />
 
         <div className="search">
           <div className="search-box">
