@@ -1,0 +1,22 @@
+.loading {
+  font-size: 30px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  width: 960px; 
+
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .spinner {
+    animation: spin 1s linear infinite;
+    background: url('./images/spinner.png') no-repeat;
+    background-size: cover;
+    height: 100px;
+    margin: 0 auto;
+    width: 100px;
+  }
+}

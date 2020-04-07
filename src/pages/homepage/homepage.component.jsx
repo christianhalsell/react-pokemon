@@ -3,6 +3,7 @@ import './homepage.styles.scss';
 
 import Banner from '../../components/banner/banner.component';
 import Search from '../../components/search/search.component';
+import Loading from '../../components/loading/loading.component';
 import CardList from '../../components/card-list/card-list.component';
 
 class HomePage extends React.Component {
@@ -40,7 +41,7 @@ class HomePage extends React.Component {
       <div className="homepage">
         <Banner />
         <Search placeholder="Search for Pokemon..." handleChange={this.handleChange} />
-        {this.state.pokemonLoaded ? <CardList pokemon={filteredPokemon} /> : 'Loading...'}
+        {this.state.pokemonLoaded ? <CardList pokemon={filteredPokemon} /> : <Loading />}
 
       </div>
     )
