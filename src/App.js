@@ -5,7 +5,7 @@ import './App.css';
 import HomePage from './pages/homepage/homepage.component';
 
 const DetailsPage = ({ match }) => (
-  <div>Details on { match.params.id}</div>
+  <div>Details on Pokémon index number { match.params.id}.</div>
 );
 
 function App() {

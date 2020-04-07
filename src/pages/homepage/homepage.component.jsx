@@ -40,7 +40,7 @@ class HomePage extends React.Component {
     return (
       <div className="homepage">
         <Banner />
-        <Search placeholder="Search for Pokemon..." handleChange={this.handleChange} />
+        <Search placeholder="Search for Pokémon..." handleChange={this.handleChange} />
         {this.state.pokemonLoaded ? <CardList pokemon={filteredPokemon} /> : <Loading />}
 
       </div>
