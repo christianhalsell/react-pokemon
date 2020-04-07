@@ -11,7 +11,8 @@ class HomePage extends React.Component {
 
     this.state = {
       pokemon: [],
-      searchField: ''
+      searchField: '',
+      pokemonLoaded: false
     }
   }
 
@@ -19,6 +20,7 @@ class HomePage extends React.Component {
     fetch('https://pokeapi.co/api/v2/pokemon?offset=0&limit=807')
       .then(response => response.json())
       .then(users => this.setState({
+        pokemonLoaded: true,
         pokemon: users.results
           .map((poke, index) => ({ id: index + 1, ...poke }))
       }))
@@ -38,7 +40,8 @@ class HomePage extends React.Component {
       <div className="homepage">
         <Banner />
         <Search placeholder="Search for Pokemon..." handleChange={this.handleChange} />
-        <CardList pokemon={filteredPokemon} />
+        {this.state.pokemonLoaded ? <CardList pokemon={filteredPokemon} /> : 'Loading...'}
+
       </div>
     )
   }
