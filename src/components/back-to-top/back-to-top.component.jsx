@@ -2,9 +2,6 @@ import React from 'react';
 import './back-to-top.styles.scss';
 
 class BackToTop extends React.Component {
-  constructor() {
-    super();
-  }
 
   trackingMagic = () => {
     function trackScroll() {

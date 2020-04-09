@@ -9,12 +9,10 @@
   line-height: 30px;
   background: #f5f5f5;
   color: #444;
+  outline: 0;
   cursor: pointer;
   border-radius: 2px;
   display: none;
-
-  display: block;
-  background-color: lime;
 
   &:hover {
     background: #e9ebec;
