@@ -18,7 +18,8 @@ class HomePage extends React.Component {
   }
 
   componentDidMount() {
-    fetch('https://pokeapi.co/api/v2/pokemon?offset=0&limit=807')
+    // fetch('https://pokeapi.co/api/v2/pokemon?offset=0&limit=807')
+    fetch('https://pokeapi.co/api/v2/pokemon?offset=0&limit=100')
       .then(response => response.json())
       .then(users => this.setState({
         pokemonLoaded: true,
