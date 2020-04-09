@@ -2,7 +2,6 @@ import React from 'react';
 import './back-to-top.styles.scss';
 
 class BackToTop extends React.Component {
-
   trackingMagic = () => {
     function trackScroll() {
       var scrolled = window.pageYOffset;
@@ -32,7 +31,6 @@ class BackToTop extends React.Component {
   componentDidMount() {
     this.trackingMagic();
   }
-
 
   render() {
     return (
