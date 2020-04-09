@@ -2,7 +2,7 @@ import React from 'react';
 import './back-to-top.styles.scss';
 
 class BackToTop extends React.Component {
-  trackingMagic = () => {
+  scrollingMagic = () => {
     function trackScroll() {
       var scrolled = window.pageYOffset;
       var coords = document.documentElement.clientHeight;
@@ -29,13 +29,13 @@ class BackToTop extends React.Component {
   }
 
   componentDidMount() {
-    this.trackingMagic();
+    this.scrollingMagic();
   }
 
   render() {
     return (
       <div>
-        <button className="back-to-top" onClick={this.trackingMagic}>&uarr;</button>
+        <button className="back-to-top" onClick={this.scrollingMagic}>&uarr;</button>
       </div>
     )
   };
