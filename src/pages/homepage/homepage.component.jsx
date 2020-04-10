@@ -12,7 +12,8 @@ class HomePage extends React.Component {
 
     this.state = {
       pokemon: [],
-      limit: 807,
+      // limit: 807,
+      limit: 9,
       searchField: '',
       pokemonLoaded: false
     }

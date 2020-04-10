@@ -1,8 +1,9 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import './card.styles.scss';
 
-const Card = ({ pokemon }) => (
-  <div className="card">
+const Card = ({ pokemon, history, match }) => (
+  <div className="card" onClick={() => history.push(`${match.url}details/${pokemon.id}`)}>
     <div className="card-image">
       <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png`} alt="" />
     </div>
@@ -12,4 +13,4 @@ const Card = ({ pokemon }) => (
   </div>
 );
 
-export default Card;
+export default withRouter(Card);
