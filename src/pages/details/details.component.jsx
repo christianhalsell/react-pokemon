@@ -33,7 +33,7 @@ class Details extends React.Component {
           // TODO: Reverse array so I don't have to nest terinary operators
         }
         </div>
-        <img className="" src={`https://pokeres.bastionbot.org/images/pokemon/${pokeDetails.id}.png`} alt="" />
+        <img className="pokemon-image" src={`https://pokeres.bastionbot.org/images/pokemon/${pokeDetails.id}.png`} alt="" />
         <div>Name: <span className="pokemon-name">{pokeDetails.name}</span></div>
         <div>Weight: {Math.round(pokeDetails.weight / 4.536)} lbs</div>
         <div>Types:</div>
