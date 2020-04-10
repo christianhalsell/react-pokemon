@@ -3,10 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import './App.css';
 
 import HomePage from './pages/homepage/homepage.component';
-
-const DetailsPage = ({ match }) => (
-  <div>Details on Pokémon index number { match.params.id}.</div>
-);
+import DetailsPage from './pages/details/details.component';
 
 function App() {
   return (
