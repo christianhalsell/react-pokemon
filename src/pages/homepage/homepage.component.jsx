@@ -12,13 +12,14 @@ class HomePage extends React.Component {
 
     this.state = {
       pokemon: [],
+      limit: 807,
       searchField: '',
       pokemonLoaded: false
     }
   }
 
   componentDidMount() {
-    fetch('https://pokeapi.co/api/v2/pokemon?offset=0&limit=807')
+    fetch(`https://pokeapi.co/api/v2/pokemon?offset=0&limit=${this.state.limit}`)
       .then(response => response.json())
       .then(users => this.setState({
         pokemonLoaded: true,

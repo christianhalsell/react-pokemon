@@ -25,8 +25,8 @@ class Details extends React.Component {
 
   render() {
     return (
-      <div>
-        <div>Details on {this.state.pokeDetails.name}.</div>
+      <div className="pokemon-details">
+        <div>Details on <span className="pokemon-name">{this.state.pokeDetails.name}</span>.</div>
       </div>
     )
   }
