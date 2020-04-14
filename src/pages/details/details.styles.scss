@@ -24,10 +24,6 @@
     background-image: linear-gradient(#dd6234, #572d3c);
     .pokemon-details-container__banner { background-image:url(images/fire.png) }
   }
-
-  &.flying {
-    background-image: linear-gradient(#88b4e7, #777f8e);
-    .pokemon-details-container__banner { background-image:url(images/flying.png) }
   }
 
   &.grass {
@@ -55,8 +51,11 @@
     .pokemon-details-container__banner { background-image:url(images/poison.png) }
   }
 
+  &.rock {
+    background-image: linear-gradient(#88b4e7, #777f8e);
+    .pokemon-details-container__banner { background-image:url(images/rock.png) }
+
   &.water {
-    background-color: #38849f;
     background-image: linear-gradient(#23588e, #38849f);
     .pokemon-details-container__banner { background-image:url(images/water.png) }
   }
