@@ -1,7 +1,8 @@
 import React from 'react';
 import './details.styles.scss';
 
-import BackButton from '../../components/back-button/back-button.component';
+import PokemonDetails from '../../components/pokemon-details/pokemon-details.component';
+import Loading from '../../components/loading/loading.component';
 
 class Details extends React.Component {
   constructor() {
@@ -25,6 +26,8 @@ class Details extends React.Component {
 
     return (
       <div className="pokemon-details">
+        {pokemonDetails.id ? <PokemonDetails {...pokemonDetails} /> : <Loading />}
+        { /*
         <div className="pokemon-details-wrapper grass">
           <div className="pokemon-details-container">
             <div className="pokemon-details-container__banner">
@@ -41,15 +44,18 @@ class Details extends React.Component {
             </div>
 
             <div><span className="pokemon-name">{pokemonDetails.name}</span></div>
-            <div>Weight: {Math.round(pokemonDetails.weight / 4.536)} lbs</div>
             <div>
-              {
-                pokemonDetails.types ? pokemonDetails.types.map((item) => <span key={item.type.name}>{item.type.name}</span>) : ''
-              }
+              <div>Weight: {Math.round(pokemonDetails.weight / 4.536)} lbs</div>
+              <div>
+                {
+                  pokemonDetails.types ? pokemonDetails.types.map((item) => <span key={item.type.name}>{item.type.name}</span>) : ''
+                }
+              </div>
+              <div>Height: {Math.round(pokemonDetails.height * 10 / 2.54)} in</div>
             </div>
-            <div>Height: {Math.round(pokemonDetails.height * 10 / 2.54)} in</div>
           </div>
         </div>
+        */}
       </div>
     )
   }
