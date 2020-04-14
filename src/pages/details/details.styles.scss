@@ -1,10 +1,85 @@
-.pokemon-details {
-  .pokemon-name {
-    text-transform: capitalize;
+.pokemon-details-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+
+  &.electric {
+    background-image: linear-gradient(#041331, #1a385f);
+    .pokemon-details-container__banner { background-image:url(images/electric.png) }
   }
 
-  .pokemon-image {
-    height: auto;
-    width: 300px;
+  &.fighting {
+    background-image: linear-gradient(#c39654, #817056);
+    .pokemon-details-container__banner { background-image:url(images/fighting.png) }
   }
+
+  &.fire {
+    background-image: linear-gradient(#dd6234, #572d3c);
+    .pokemon-details-container__banner { background-image:url(images/fire.png) }
+  }
+
+  &.flying {
+    background-image: linear-gradient(#88b4e7, #777f8e);
+    .pokemon-details-container__banner { background-image:url(images/flying.png) }
+  }
+
+  &.grass {
+    background-image: linear-gradient(#78b48d, #a5ca50);
+    .pokemon-details-container__banner { background-image:url(images/grass.png) }
+  }
+
+  &.ground {
+    background-image: linear-gradient(#e4c28f, #b99a76);
+    .pokemon-details-container__banner { background-image:url(images/ground.png) }
+  }
+
+  &.ice {
+    background-image: linear-gradient(#335fb0, #496883);
+    .pokemon-details-container__banner { background-image:url(images/ice.png) }
+  }
+
+  &.normal {
+    background-image: linear-gradient(#fce9ae, #d1c39c);
+    .pokemon-details-container__banner { background-image:url(images/normal.png) }
+  }
+
+  &.poison {
+    background-image: linear-gradient(#6942e5, #161452);
+    .pokemon-details-container__banner { background-image:url(images/poison.png) }
+  }
+
+  &.water {
+    background-color: #38849f;
+    background-image: linear-gradient(#23588e, #38849f);
+    .pokemon-details-container__banner { background-image:url(images/water.png) }
+  }
+
+  .pokemon-details-container {
+    width: 630px;
+    padding-bottom: 40px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    .pokemon-details-container__banner {
+      height: 360px;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    
+    .pokemon-name {
+      text-transform: capitalize;
+    }
+  
+    .pokemon-image {
+      margin-top: -160px;
+
+      img {
+        height: auto;
+        width: 240px;
+      }
+    }
+  }
+
 }

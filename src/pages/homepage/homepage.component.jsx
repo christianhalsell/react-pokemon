@@ -43,7 +43,6 @@ class HomePage extends React.Component {
         <Banner />
         <Search placeholder="Search for Pokémon..." handleChange={this.handleChange} />
         {this.state.pokemonLoaded ? <CardList pokemon={filteredPokemon} /> : <Loading />}
-
       </div>
     )
   }
