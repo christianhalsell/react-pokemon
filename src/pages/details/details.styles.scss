@@ -24,7 +24,6 @@
     background-image: linear-gradient(#dd6234, #572d3c);
     .pokemon-details-container__banner { background-image:url(images/fire.png) }
   }
-  }
 
   &.grass {
     background-image: linear-gradient(#78b48d, #a5ca50);
@@ -54,6 +53,7 @@
   &.rock {
     background-image: linear-gradient(#88b4e7, #777f8e);
     .pokemon-details-container__banner { background-image:url(images/rock.png) }
+  }
 
   &.water {
     background-image: linear-gradient(#23588e, #38849f);
