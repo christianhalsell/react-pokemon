@@ -5,6 +5,11 @@
   min-height: 100vh;
   text-align: center;
 
+  &.bug {
+    background-image: linear-gradient(#64bf57, #bbaa3b);
+    .pokemon-details-container__banner { background-image:url(images/bug.png) }
+  }
+  
   &.electric {
     background-image: linear-gradient(#041331, #1a385f);
     .pokemon-details-container__banner { background-image:url(images/electric.png) }
