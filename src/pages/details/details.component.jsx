@@ -25,7 +25,7 @@ class Details extends React.Component {
 
     return (
       <div className="pokemon-details">
-        <div className="pokemon-details-wrapper bug">
+        <div className="pokemon-details-wrapper grass">
           <div className="pokemon-details-container">
             <div className="pokemon-details-container__banner">
               <BackButton />
