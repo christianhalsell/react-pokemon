@@ -9,10 +9,25 @@
     background-image: linear-gradient(#64bf57, #bbaa3b);
     .pokemon-details-container__banner { background-image:url(images/bug.png) }
   }
+
+  &.dark {
+    background-image: linear-gradient(#000, #fff);
+    .pokemon-details-container__banner { background-image:url(images/dark.png) }
+  }
+
+  &.dragon {
+    background-image: linear-gradient(#000, #fff);
+    .pokemon-details-container__banner { background-image:url(images/dragon.png) }
+  }
   
   &.electric {
     background-image: linear-gradient(#041331, #1a385f);
     .pokemon-details-container__banner { background-image:url(images/electric.png) }
+  }
+
+  &.fairy {
+    background-image: linear-gradient(#000, #fff);
+    .pokemon-details-container__banner { background-image:url(images/fairy.png) }
   }
 
   &.fighting {
@@ -23,6 +38,16 @@
   &.fire {
     background-image: linear-gradient(#dd6234, #572d3c);
     .pokemon-details-container__banner { background-image:url(images/fire.png) }
+  }
+
+  &.flying {
+    background-image: linear-gradient(#000, #fff);
+    .pokemon-details-container__banner { background-image:url(images/flying.png) }
+  }
+
+  &.ghost {
+    background-image: linear-gradient(#000, #fff);
+    .pokemon-details-container__banner { background-image:url(images/ghost.png) }
   }
 
   &.grass {
@@ -50,9 +75,19 @@
     .pokemon-details-container__banner { background-image:url(images/poison.png) }
   }
 
+  &.psychic {
+    background-image: linear-gradient(#000, #fff);
+    .pokemon-details-container__banner { background-image:url(images/psychic.png) }
+  }
+
   &.rock {
     background-image: linear-gradient(#88b4e7, #777f8e);
     .pokemon-details-container__banner { background-image:url(images/rock.png) }
+  }
+
+  &.steel {
+    background-image: linear-gradient(#000, #fff);
+    .pokemon-details-container__banner { background-image:url(images/steel.png) }
   }
 
   &.water {
