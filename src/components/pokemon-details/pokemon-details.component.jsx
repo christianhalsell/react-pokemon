@@ -29,16 +29,22 @@ const PokemonDetails = ({ id, types, name, weight, height }) => {
           <img src={`https://pokeres.bastionbot.org/images/pokemon/${id}.png`} alt="" />
         </div>
 
-        <div><span className="pokemon-name">{name}</span></div>
-        <div>
-          <div>Weight: {Math.round(weight / 4.536)} lbs</div>
-          <div>
-            {typeMain}{typeSecondary ? ` / ${typeSecondary}` : null}
+        <div className="pokemon-name">{name}</div>
+        <div className="pokemon-stats">
+          <div className="pokemon-stats_weight">
+            <div>{Math.round(weight / 4.536)} lb</div>
+            <div>Weight</div>
           </div>
-          <div>Height: {Math.round(height * 10 / 2.54)} in</div>
+          <div className="pokemon-stats_types">
+            {typeMain}{typeSecondary ? ` / ${typeSecondary}` : null} {/* TODO: might be a better way */}
+          </div>
+          <div className="pokemon-stats_height">
+            <div>{Math.round(height * 10 / 2.54)} in</div>
+            <div>Height</div>
+          </div>
         </div>
-      </div >
-    </div >
+      </div>
+    </div>
   )
 }
 
