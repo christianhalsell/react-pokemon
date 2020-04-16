@@ -1,5 +1,7 @@
 // colors
-$light-gray: #dddddd;
+$gray-light: #dddddd;
+$gray-medium: #888888;
+$blue: #144078;
 
 // measurements
 $image-dimension: 240px;
@@ -125,31 +127,71 @@ $margin-top: 20px;
     
     .pokemon-name {
       font-size: 48px;
-      color: #14386d;
+      color: $blue;
       line-height: 1em;
       margin-top: $margin-top;
       text-transform: capitalize;
     }
 
     .pokemon-stats {
-      display: flex;
-      margin: $margin-top 53px 0;
+      background-color: $gray-light;
 
-      .pokemon-stats_weight {
-        border-right: 1px solid $light-gray;
-        flex: 3;
-        // background-color: yellow;
+      .pokemon-stats__data-row {
+        color: $blue;
+        display: grid;
+        font-size: 32px;
+        grid-gap: 1px;
+        grid-template-columns: 3fr 4fr 3fr;
+        height: 40px;
+      }
+  
+      .pokemon-stats__label-row {
+        color: $gray-medium;
+        display: grid;
+        font-size: 16px;
+        grid-gap: 1px;
+        grid-template-columns: 3fr 4fr 3fr;
+        text-transform: uppercase;
       }
 
-      .pokemon-stats_types {
-        flex: 4;
-        border-right: 1px solid $light-gray;
-        // background-color: lime;
+      .type-icon {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+
+        &.secondary {
+          margin-left: 24px;
+        }
+
+        &.bug {background-color: #bbaa3b}      
+        &.dark {background-color: #070f2d}      
+        &.dragon {background-color: #486642}        
+        &.electric {background-color: #1a385f}      
+        &.fairy {background-color: #8875d8}      
+        &.fighting {background-color: #817056}      
+        &.fire {background-color: #572d3c}      
+        &.flying {background-color: #5596ef}      
+        &.ghost {background-color: #00335d}      
+        &.grass {background-color: #a5ca50}      
+        &.ground {background-color: #b99a76}      
+        &.ice {background-color: #496883}      
+        &.normal {background-color: #d1c39c}      
+        &.poison {background-color: #161452}      
+        &.psychic {background-color: #221ab4}      
+        &.rock {background-color: #777f8e}      
+        &.steel {background-color: #15262e}      
+        &.water {background-color: #38849f}
       }
 
-      .pokemon-stats_height {
-        flex: 3;
-        // background-color: cyan;
+      .type-divider {
+        display: inline-block;
+        margin: 0 5px;
+      }       
+  
+      .stats-weight,
+      .stats-type,
+      .stats-height {
+        background-color: white;
       }
     }
   }
