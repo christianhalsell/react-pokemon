@@ -163,24 +163,24 @@ $margin-top: 20px;
           margin-left: 24px;
         }
 
-        &.bug {background-color: #bbaa3b}      
-        &.dark {background-color: #070f2d}      
-        &.dragon {background-color: #486642}        
-        &.electric {background-color: #1a385f}      
-        &.fairy {background-color: #8875d8}      
-        &.fighting {background-color: #817056}      
-        &.fire {background-color: #572d3c}      
-        &.flying {background-color: #5596ef}      
-        &.ghost {background-color: #00335d}      
-        &.grass {background-color: #a5ca50}      
-        &.ground {background-color: #b99a76}      
-        &.ice {background-color: #496883}      
-        &.normal {background-color: #d1c39c}      
-        &.poison {background-color: #161452}      
-        &.psychic {background-color: #221ab4}      
-        &.rock {background-color: #777f8e}      
-        &.steel {background-color: #15262e}      
-        &.water {background-color: #38849f}
+        &.bug {background: url('./images/bug-icon.png') no-repeat 0 0}
+        &.dark {background: url('./images/dark-icon.png') no-repeat 0 0}
+        &.dragon {background: url('./images/dragon-icon.png') no-repeat 0 0}
+        &.electric {background: url('./images/electric-icon.png') no-repeat 0 0}
+        &.fairy {background: url('./images/fairy-icon.png') no-repeat 0 0}
+        &.fighting {background: url('./images/fighting-icon.png') no-repeat 0 0}
+        &.fire {background: url('./images/fire-icon.png') no-repeat 0 0}
+        &.flying {background: url('./images/flying-icon.png') no-repeat 0 0}
+        &.ghost {background: url('./images/ghost-icon.png') no-repeat 0 0}
+        &.grass {background: url('./images/grass-icon.png') no-repeat 0 0}
+        &.ground {background: url('./images/ground-icon.png') no-repeat 0 0}
+        &.ice {background: url('./images/ice-icon.png') no-repeat 0 0}
+        &.normal {background: url('./images/normal-icon.png') no-repeat 0 0}
+        &.poison {background: url('./images/poison-icon.png') no-repeat 0 0}
+        &.psychic {background: url('./images/psychic-icon.png') no-repeat 0 0}
+        &.rock {background: url('./images/rock-icon.png') no-repeat 0 0}
+        &.steel {background: url('./images/steel-icon.png') no-repeat 0 0}
+        &.water {background: url('./images/water-icon.png') no-repeat 0 0}
       }
 
       .type-divider {
