@@ -13,6 +13,10 @@ $margin-top: 20px;
   min-height: 100vh;
   text-align: center;
 
+  @media screen and (max-width: 768px) {
+    min-height: 101vh;
+  }
+
   &.bug {
     background-color: #bbaa3b;
     .pokemon-details-container__banner { background-image: url(images/bug.png) }
@@ -109,6 +113,10 @@ $margin-top: 20px;
     padding-bottom: 40px;
     margin: 0 auto;
     width: 630px;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
 
     .pokemon-details-container__banner {
       background-repeat: no-repeat;
