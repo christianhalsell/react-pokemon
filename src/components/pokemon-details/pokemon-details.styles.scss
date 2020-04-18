@@ -113,13 +113,16 @@ $margin-top: 20px;
     .pokemon-details-container__banner {
       background-repeat: no-repeat;
       background-size: cover;
+      position: relative;
       height: 360px;
     }
   
     .pokemon-image {
       height: $image-dimension;
       margin: -180px auto 0;
+      position: relative;
       width: $image-dimension;
+      z-index: 1;
 
       img {
         height: auto;
