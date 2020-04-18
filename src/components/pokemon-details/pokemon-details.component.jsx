@@ -11,10 +11,8 @@ const PokemonDetails = ({ id, types, name, weight, height }) => {
   for (let i in types) {
     if (types[i].slot === 1) {
       typeMain = types[i].type.name;
-      console.log(`Primary type: ${typeMain}`)
     } else if (types[i].slot === 2) {
       typeSecondary = types[i].type.name;
-      console.log(`Secondary type: ${typeSecondary}`)
     }
   }
 
