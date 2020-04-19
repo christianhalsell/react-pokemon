@@ -22,7 +22,8 @@ const PokemonDetails = ({ id, types, name, weight, height }) => {
       <div className="pokemon-details-container">
         <DetailsBanner typeMain={typeMain} />
         <PokemonImageLarge id={id} />
-        <div className="pokemon-name">{name}</div>
+
+        {/* <div className="pokemon-name">{name}</div> */}
 
         <div className="pokemon-stats">
           <div className="pokemon-stats__data-row">
