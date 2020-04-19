@@ -1,0 +1,69 @@
+// TODO: I had to use these variables elsewhere too. Is this the nature of components?
+// colors
+$gray-light: #dddddd;
+$gray-medium: #888888;
+$blue: #144078;
+
+// measurements
+$margin-top: 20px;
+
+.pokemon-stats {
+  background-color: $gray-light;
+  margin-top: 20px;
+
+  .pokemon-stats__data-row {
+    color: $blue;
+    display: grid;
+    font-size: 32px;
+    grid-gap: 1px;
+    grid-template-columns: 3fr 4fr 3fr;
+    height: 40px;
+  }
+
+  .pokemon-stats__label-row {
+    color: $gray-medium;
+    display: grid;
+    font-size: 16px;
+    grid-gap: 1px;
+    grid-template-columns: 3fr 4fr 3fr;
+    text-transform: uppercase;
+  }
+
+  .type-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+
+    &.secondary {margin-left: 24px}
+
+    &.bug {background: url(./images/bug-icon.png) no-repeat 0 0}
+    &.dark {background: url(./images/dark-icon.png) no-repeat 0 0}
+    &.dragon {background: url(./images/dragon-icon.png) no-repeat 0 0}
+    &.electric {background: url(./images/electric-icon.png) no-repeat 0 0}
+    &.fairy {background: url(./images/fairy-icon.png) no-repeat 0 0}
+    &.fighting {background: url(./images/fighting-icon.png) no-repeat 0 0}
+    &.fire {background: url(./images/fire-icon.png) no-repeat 0 0}
+    &.flying {background: url(./images/flying-icon.png) no-repeat 0 0}
+    &.ghost {background: url(./images/ghost-icon.png) no-repeat 0 0}
+    &.grass {background: url(./images/grass-icon.png) no-repeat 0 0}
+    &.ground {background: url(./images/ground-icon.png) no-repeat 0 0}
+    &.ice {background: url(./images/ice-icon.png) no-repeat 0 0}
+    &.normal {background: url(./images/normal-icon.png) no-repeat 0 0}
+    &.poison {background: url(./images/poison-icon.png) no-repeat 0 0}
+    &.psychic {background: url(./images/psychic-icon.png) no-repeat 0 0}
+    &.rock {background: url(./images/rock-icon.png) no-repeat 0 0}
+    &.steel {background: url(./images/steel-icon.png) no-repeat 0 0}
+    &.water {background: url(./images/water-icon.png) no-repeat 0 0}
+  }
+
+  .type-divider {
+    display: inline-block;
+    margin: 0 5px;
+  }       
+
+  .stats-weight,
+  .stats-type,
+  .stats-height {
+    background-color: white;
+  }
+}

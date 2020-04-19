@@ -1,0 +1,10 @@
+$blue: #144078;
+$margin-top: 20px;
+
+.pokemon-name {
+  font-size: 48px;
+  color: $blue;
+  line-height: 1em;
+  margin-top: $margin-top;
+  text-transform: capitalize;
+}

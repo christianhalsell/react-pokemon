@@ -1,5 +1,5 @@
 import React from 'react';
-import './pokemon-image-large.styles.scss';
+import './image-large.styles.scss';
 
 const PokemonImageLarge = ({ id }) => (
   <div className="pokemon-image">
