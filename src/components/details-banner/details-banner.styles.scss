@@ -1,0 +1,25 @@
+.pokemon-details-banner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 360px;
+  
+  &.bug { background-image: url(images/bug-banner.png) }
+  &.dark {background-image: url(images/dark-banner.png); background-position-y: -190px; }
+  &.dragon {background-image: url(images/dragon-banner.png) }  
+  &.electric { background-image: url(images/electric-banner.png) }
+  &.fairy { background-image: url(images/fairy-banner.png) }
+  &.fighting {background-image: url(images/fighting-banner.png) }
+  &.fire { background-image: url(images/fire-banner.png); background-position-y: -120px }
+  &.flying { background-image: url(images/flying-banner.png) }
+  &.ghost { background-image: url(images/ghost-banner.png) }
+  &.grass { background-image: url(images/grass-banner.png) }
+  &.ground { background-image: url(images/ground-banner.png) }
+  &.ice { background-image: url(images/ice-banner.png) }
+  &.normal { background-image: url(images/normal-banner.png) }
+  &.poison { background-image: url(images/poison-banner.png) }
+  &.psychic { background-image: url(images/psychic-banner.png) }
+  &.rock { background-image: url(images/rock-banner.png) }
+  &.steel { background-image: url(images/steel-banner.png) }
+  &.water { background-image: url(images/water-banner.png); background-position-y: -80px }
+}

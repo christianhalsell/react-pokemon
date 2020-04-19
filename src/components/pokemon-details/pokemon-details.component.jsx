@@ -1,7 +1,8 @@
 import React from 'react';
 import './pokemon-details.styles.scss';
 
-import BackButton from '../back-button/back-button.component';
+import DetailsBanner from '../details-banner/details-banner.component';
+import PokemonImageLarge from '../pokemon-image-large/pokemon-image-large.component';
 
 const PokemonDetails = ({ id, types, name, weight, height }) => {
   let typeMain, typeSecondary;
@@ -19,14 +20,8 @@ const PokemonDetails = ({ id, types, name, weight, height }) => {
   return (
     <div className={`pokemon-details-wrapper ${typeMain}`}>
       <div className="pokemon-details-container">
-        <div className="pokemon-details-container__banner">
-          <BackButton />
-        </div>
-
-        <div className="pokemon-image">
-          <img src={`https://pokeres.bastionbot.org/images/pokemon/${id}.png`} alt="" />
-        </div>
-
+        <DetailsBanner typeMain={typeMain} />
+        <PokemonImageLarge id={id} />
         <div className="pokemon-name">{name}</div>
 
         <div className="pokemon-stats">

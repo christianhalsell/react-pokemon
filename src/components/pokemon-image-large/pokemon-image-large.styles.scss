@@ -1,0 +1,15 @@
+
+$image-dimension: 240px;
+
+.pokemon-image {
+  height: $image-dimension;
+  margin: -180px auto 0;
+  position: relative;
+  width: $image-dimension;
+  z-index: 1;
+
+  img {
+    height: auto;
+    width: $image-dimension;
+  }
+}
