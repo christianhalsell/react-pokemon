@@ -1,13 +1,3 @@
-// colors
-$gray-light: #dddddd;
-$gray-medium: #888888;
-$blue: #144078;
-
-// measurements
-$margin-top: 20px;
-
-
-
 .pokemon-details-wrapper {
   min-height: 100vh;
   text-align: center;
@@ -18,7 +8,7 @@ $margin-top: 20px;
 
   &.bug { background-color: #bbaa3b }
   &.dark { background-color: #070f2d }
-  &.dragon { background-color: #486642 }  
+  &.dragon { background-color: #486642 }
   &.electric { background-color: #1a385f }
   &.fairy { background-color: #8875d8 }
   &.fighting { background-color: #817056 }
@@ -37,7 +27,7 @@ $margin-top: 20px;
 
   .pokemon-details-container {
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
     padding-bottom: 40px;
     margin: 0 auto;
     width: 630px;

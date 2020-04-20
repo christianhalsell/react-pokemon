@@ -34,16 +34,16 @@ class HomePage extends React.Component {
 
   render() {
     const { pokemon, searchField } = this.state;
-    const filteredPokemon = pokemon.filter((monster) => (
+    const filteredPokemon = pokemon.filter(monster => (
       monster.name.toLowerCase().includes(searchField.toLowerCase())
     ));
 
     return (
-      <div className="homepage">
+      <main className="homepage">
         <Banner />
         <Search placeholder="Search for Pokémon..." handleChange={this.handleChange} />
         {this.state.pokemonLoaded ? <CardList pokemon={filteredPokemon} /> : <Loading />}
-      </div>
+      </main>
     )
   }
 };

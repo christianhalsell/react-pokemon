@@ -1,12 +1,12 @@
 .pokemon-details-banner {
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
     height: 360px;
-  
+    position: relative;
+
   &.bug { background-image: url(images/bug-banner.png) }
   &.dark {background-image: url(images/dark-banner.png); background-position-y: -190px; }
-  &.dragon {background-image: url(images/dragon-banner.png) }  
+  &.dragon {background-image: url(images/dragon-banner.png) }
   &.electric { background-image: url(images/electric-banner.png) }
   &.fairy { background-image: url(images/fairy-banner.png) }
   &.fighting {background-image: url(images/fighting-banner.png) }

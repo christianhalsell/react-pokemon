@@ -4,9 +4,9 @@ import './banner.styles.scss';
 const Banner = () => (
   <div className="banner">
     <div className="banner-content">
-      <div className="banner-eevee"></div>
-      <div className="banner-logo"></div>
-      <div className="banner-pikachu"></div>
+      <div className="banner-eevee" />
+      <div className="banner-logo" />
+      <div className="banner-pikachu" />
     </div>
   </div>
 );
