@@ -1,11 +1,4 @@
-// TODO: I had to use these variables elsewhere too. Is this the nature of components?
-// colors
-$gray-light: #dddddd;
-$gray-medium: #888888;
-$blue: #144078;
-
-// measurements
-$margin-top: 20px;
+@import '../../utils/variables';
 
 .pokemon-stats {
   background-color: $gray-light;

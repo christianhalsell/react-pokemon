@@ -1,5 +1,4 @@
 import React from 'react';
-import './details.styles.scss';
 
 import PokemonDetails from '../../components/pokemon-details/pokemon-details.component';
 import Loading from '../../components/loading/loading.component';
@@ -22,12 +21,12 @@ class Details extends React.Component {
   }
 
   render() {
-    const pokemonDetails = this.state.pokemonDetails;
+    const { pokemonDetails } = this.state;
 
     return (
-      <div className="pokemon-details">
+      <main className="pokemon-details">
         {pokemonDetails.id ? <PokemonDetails {...pokemonDetails} /> : <Loading />}
-      </div>
+      </main>
     )
   }
 }

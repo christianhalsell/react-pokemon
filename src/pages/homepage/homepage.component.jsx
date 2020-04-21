@@ -34,7 +34,7 @@ class HomePage extends React.Component {
 
   render() {
     const { pokemon, searchField } = this.state;
-    const filteredPokemon = pokemon.filter((monster) => (
+    const filteredPokemon = pokemon.filter(monster => (
       monster.name.toLowerCase().includes(searchField.toLowerCase())
     ));
 

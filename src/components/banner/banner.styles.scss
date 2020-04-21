@@ -3,18 +3,18 @@
   background-color: #fe0000;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   height: 250px;
+  justify-content: center;
 
   .banner-content {
-    max-width: 960px;
     display: flex;  
+    max-width: 960px;
 
     .banner-eevee {
-      width: 141px;
-      height: 160px;
       background: url('./images/eevee.png') no-repeat 0 0;
       background-size: cover;
+      height: 160px;      
+      width: 141px;
 
       @media screen and (max-width: 768px) {
         display: none;
@@ -22,10 +22,10 @@
     }
 
     .banner-pikachu {
-      width: 161px;
-      height: 170px;
       background: url('./images/pikachu.png') no-repeat 0 0;
       background-size: cover;
+      height: 170px;      
+      width: 161px;
 
       @media screen and (max-width: 768px) {
         display: none;
@@ -33,11 +33,12 @@
     }
     
     .banner-logo {
-      width: 408px;
-      height: 150px;
-      margin: 0 40px;
       background: url('./images/pokemon-logo-png-pokemon-logo-png-2000.png') no-repeat 0 0;
       background-size: cover;
+      height: 150px;
+      margin: 0 40px;
+      width: 408px;
+      
 
       @media screen and (max-width: 768px) {
         margin: 0;

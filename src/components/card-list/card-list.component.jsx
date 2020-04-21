@@ -5,17 +5,14 @@ import Card from '../card/card.component';
 import BackToTop from '../back-to-top/back-to-top.component';
 
 const CardList = ({ pokemon }) => (
-  <div>
-    <div className="card-list">
-      {
-        pokemon.map((pokemon, index) => (
-          <Card key={index} pokemon={pokemon} />
-        ))
-      }
-    </div>
+  <section className="card-list">
+    {
+      pokemon.map((pokemon) => (
+        <Card key={pokemon.id} pokemon={pokemon} />
+      ))
+    }
     <BackToTop />
-  </div>
-
+  </section>
 );
 
 export default CardList;

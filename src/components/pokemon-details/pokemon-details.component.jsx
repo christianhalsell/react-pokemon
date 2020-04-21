@@ -9,13 +9,11 @@ import DetailsStats from '../details-stats/details-stats.component';
 const PokemonDetails = ({ id, types, name, weight, height }) => {
   let typeMain, typeSecondary;
 
-  // TODO: not super-happy with this approach. Think about refactor
-  // Because the api has the types in reverse order
   for (let i in types) {
-    if (types[i].slot === 1) {
-      typeMain = types[i].type.name;
-    } else if (types[i].slot === 2) {
+    if (types[i].slot === 2) {
       typeSecondary = types[i].type.name;
+    } else {
+      typeMain = types[i].type.name;
     }
   }
 
@@ -23,7 +21,7 @@ const PokemonDetails = ({ id, types, name, weight, height }) => {
     <div className={`pokemon-details-wrapper ${typeMain}`}>
       <div className="pokemon-details-container">
         <DetailsBanner typeMain={typeMain} />
-        <PokemonImageLarge id={id} />
+        <PokemonImageLarge id={id} name={name} />
         <DetailsName name={name} />
         <DetailsStats typeMain={typeMain} typeSecondary={typeSecondary} weight={weight} height={height} />
       </div>

@@ -4,8 +4,8 @@ import './back-to-top.styles.scss';
 class BackToTop extends React.Component {
   scrollingMagic = () => {
     function trackScroll() {
-      var scrolled = window.pageYOffset;
-      var coords = document.documentElement.clientHeight;
+      const scrolled = window.pageYOffset;
+      const coords = document.documentElement.clientHeight;
 
       if (scrolled > coords) {
         goTopBtn.classList.add('back-to-top-show');
@@ -22,7 +22,7 @@ class BackToTop extends React.Component {
       }
     }
 
-    var goTopBtn = document.querySelector('.back-to-top');
+    const goTopBtn = document.querySelector('.back-to-top');
 
     window.addEventListener('scroll', trackScroll);
     goTopBtn.addEventListener('click', backToTop);
@@ -34,9 +34,7 @@ class BackToTop extends React.Component {
 
   render() {
     return (
-      <div>
-        <button className="back-to-top" onClick={this.scrollingMagic}>&uarr;</button>
-      </div>
+      <button className="back-to-top" onClick={this.scrollingMagic}>&uarr;</button>
     )
   };
 }
