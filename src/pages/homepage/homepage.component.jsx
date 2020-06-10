@@ -26,6 +26,20 @@ class HomePage extends React.Component {
         pokemon: users.results
           .map((poke, index) => ({ id: index + 1, ...poke }))
       }))
+    // TODO: add scroll listener
+    // .then(() => {
+    // window.addEventListener("scroll", function (event) {
+    //   var top = this.scrollY,
+    //     left = this.scrollX;
+
+    //   console.log(top);
+    // }, false);
+    // })
+
+    // TODO: scroll to position
+    // .then(item => {
+    //   window.scrollTo({ top: 7552, behavior: 'auto' });
+    // })
   }
 
   handleChange = (e) => {
